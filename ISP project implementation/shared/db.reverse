@@ -1,0 +1,19 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns.isp121.lab. root.isp121.lab. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.isp121.lab.
+2.1	IN	PTR	ns.isp121.lab.
+3.1	IN	PTR	www.isp121.lab.
+4.1	IN	PTR	dhcpd.isp121.lab.
+1.1	IN	PTR	gw.isp121.lab.
+1.2	IN	PTR	gwclient.isp121.lab.
+2.2     IN      PTR     client1.isp121.lab.
+3.2     IN      PTR     client2.isp121.lab.
